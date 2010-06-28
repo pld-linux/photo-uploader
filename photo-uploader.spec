@@ -8,6 +8,8 @@ Source0:	http://dl.cihar.com/photo-uploader/latest/%{name}-%{version}.tar.bz2
 # Source0-md5:	f62d904f6b81ecd3a30dbc7e8465743a
 Patch0:		%{name}-ext.patch
 URL:		http://cihar.com/software/photo-uploader/
+BuildRequires:	python-devel
+BuildRequires:	python-pycurl
 BuildRequires:	rpm-pythonprov
 Requires:	python-modules
 Requires:	python-pycurl
