@@ -1,0 +1,9 @@
+--- photo-uploader-0.9/phoupl/__init__.py~	2010-02-10 11:00:40.000000000 +0100
++++ photo-uploader-0.9/phoupl/__init__.py	2010-06-28 20:50:37.038248805 +0200
+@@ -133,5 +133,5 @@
+ # We register all services here
+ for filename in os.listdir(SERVICES_ABS_DIR):
+     module_name, ext = os.path.splitext(filename)
+-    if ext == '.py' and module_name != '__init__':
++    if ext in ['.py', '.pyc', '.pyo'] and module_name != '__init__':
+         __import__('phoupl.services.%s' % module_name)

@@ -1,11 +1,12 @@
 Summary:	photo uploader
 Name:		photo-uploader
 Version:	0.9
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications
 Source0:	http://dl.cihar.com/photo-uploader/latest/%{name}-%{version}.tar.bz2
 # Source0-md5:	f62d904f6b81ecd3a30dbc7e8465743a
+Patch0:		%{name}-ext.patch
 URL:		http://cihar.com/software/photo-uploader/
 BuildRequires:	rpm-pythonprov
 Requires:	python-modules
@@ -18,6 +19,7 @@ Simple Python script to upload photos to minilab and other services.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__python} setup.py build
