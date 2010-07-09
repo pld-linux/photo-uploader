@@ -1,7 +1,7 @@
 Summary:	photo uploader
 Name:		photo-uploader
 Version:	0.9
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Applications
 Source0:	http://dl.cihar.com/photo-uploader/latest/%{name}-%{version}.tar.bz2
