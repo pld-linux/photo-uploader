@@ -21,7 +21,7 @@ Simple Python script to upload photos to minilab and other services.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__python} setup.py build
